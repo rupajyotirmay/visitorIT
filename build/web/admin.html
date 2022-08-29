@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <title>Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body {  background-color:lightblue;}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+   font-size: 16px;
+}
+button{
+    height: 50px;
+    width: 125px;
+}
+label{
+    font-size: 23Px;
+   
+}
+.imgedit{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.btnedit{
+    width: 150px;
+    height: 150Px;
+    border-radius: 5%;
+    backface-visibility: 70%;
+    background-color: lightblue;
+   
+}
+</style>
+</head>
+<body>
+    <div class="container">
+	<nav  class="navbar navbar-default">
+	<div class="container-fluid">
+            <div class="navbar-header">        
+      <img src = "FolderImage/itclog.png" style="width:200px; " ></li> 
+      </div><h1>Grievance Redressal System ( शिकायत निवारण पोर्टल )</h1>
+	<ul class="nav navbar-nav navbar-right">
+        <li><a href="admin.html" action="./addaudit" method ="post"><span class="glyphicon glyphicon-log-in"></span> Go Back </a></li>
+	<li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout </a></li>
+	</ul>
+	      
+	</div>
+	</nav> 
+</div>     
+    
+    <div class="container">
+        <center>   <h1>ADMIN PAGE</h1>
+            <div class="col-sm-12">
+                <h3>Complaint Filter</h3></br></br></br></br>
+                </div ></center>         
+<form class="form-inline" action="fdbsbj.jsp" method="get">
+    <div class="col-sm-1"> </div>
+<div class="col-sm-2">
+     <button type="submit" name="sbj" value="Ambulance"class="btnedit"><img src = "FolderImage/amb.png" class="imgedit"></br>  Ambulance </button>
+ </div>
+<div class="col-sm-2">  
+     <button type="submit" name="sbj" value="Working_Environment" back class="btnedit" ><img src = "FolderImage/worken_ew.png" class="imgedit" ></br> Working Environment </button> </div>
+<div class="col-sm-2">    
+    <button type="submit" name="sbj"value="Wages"class="btnedit"><img src = "FolderImage/wages_new.png" class="imgedit"> </br> Wages </button>
+ </div> 
+<div class="col-sm-2">
+     <button type="submit" name="sbj"value="Infrastructure" class="btnedit"><img src = "FolderImage/infra_new.png" class="imgedit"> </br>Infrastructure </button>
+ </div> <div class="col-sm-2">
+    <button type="submit" name="sbj"value="Canteen" class="btnedit"><img src = "FolderImage/canteen.png" class="imgedit"></br> Canteen </button>
+ </div> 
+</form>
+        </div>
+    
+<div class="footer">
+    <p>All CopyRight &COPY; Reserved for Grievance Redressal System ( शिकायत निवारण पोर्टल ),ITC MGR</p>
+</div>
+</body>
+</html>
+

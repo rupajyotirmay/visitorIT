@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <title>Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale =1,user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+body {  background-color:lightblue;}
+p{text-decoration: lightblue;
+color: lightblue;}
+div.col-sm-2{
+    display: flex;
+}div.col-xm-2{
+    display: flex;
+}
+.footer {
+    display: flex;
+   position:fixed;
+   bottom: 0;
+   left:0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   justify-content: center;
+   font-size: 12px;
+   text-decoration: whitesmoke;
+   
+}
+@-ms-viewport{
+    width:device-width;zoom:1.0;
+}
+@-webkit-viewport{
+    width:device-width;zoom:1.0;
+}
+.navbar-header{display: flex}
+.imgedit{
+    height:100%;
+    width: auto;
+    display: flex;
+
+    
+    .navbar {
+    position: relative;
+    min-height: 30px;
+    margin-bottom: 0px;
+    /*border: 1px solid;*/
+    width: 100%;
+    border-radius: 0px;
+    display:block;
+}
+
+.navbar-default {
+    background-color: #2b74c1;
+    border-color: #2377a0;
+    padding: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+    width: 100%;
+}
+
+.dropdown-header, .dropdown-menu > li > a {
+    white-space: pre-wrap;
+}
+
+.navbar-nav > li > a {
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+}
+
+.nav > li > a {
+    padding: 5px 10px;
+}
+
+.navbar-nav > li {
+    float: left;
+    width: 20%;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
+    color: #fff;
+    /*font-weight: 700;*/
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+    text-transform: uppercase;
+    font: 500 14px 'Roboto', sans-serif;
+}
+
+.navbar-nav {
+    display: inline;
+    width: 100%;
+}
+
+.navbar-default .navbar-brand {
+    display: inline;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    border: solid 1px #ccc;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+}
+
+    .navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #337ab7;
+        color: #fff;
+    }
+
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    /* margin-right: 0px; */
+    /* margin-left: 0; */
+}
+
+
+#navbar {
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #116738 !important;
+    background-color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+   <nav  class="navbar navbar-default">           
+  <div class="container-fluid">
+    <div class="navbar-header">                 
+        <ul class="nav navbar-brand">
+            <li> <img class="imgedit" src = "FolderImage/itclog.png" ></li>
+            <li class="active">Grievance Redressal System( शिकायत निवारण पोर्टल )</li></ul>
+    </div>
+      <ul class="nav navbar-nav navbar-right navbar-btn">      
+          <li> <a onclick="document.getElementById('id02').style.display= 'block'">Status /शिकायत की स्थिति <span class="glyphicon glyphicon-search"></span></a>
+        <a onclick="document.getElementById('id01').style.display= 'block'"> &nbsp; Login<span class="glyphicon glyphicon-user"></span>  </a>
+          </li></ul>
+  </div>
+    </nav>
+    <form action="./addcomfeed" method="post"> 
+        <div  class ="row"> 
+            <div class="col-sm-4 col-xm-4">
+                        <label for="dept">डिपार्टमेंट / Department</label></div>
+            <div class="col-sm-5 col-xm-5">
+                <select class="form-control" name="dept">
+                        <option value="0">डिपार्टमेंट चुनें / Select Department</option>
+                        <option value="PMD">पीएमडी / PMD</option>
+                        <option value="SMD">एसएमडी / SMD</option>
+                        <option value="Engineering">इंजीनियरिंग / Engineering</option>
+                        <option value="Canteen">कैंटीन / Canteen</option> 
+                        <option value="Ambulance">एम्ब्युलेन्स / Ambulance</option>
+                        <option value="CTO">सीटीओ / CTO</option> 
+                        <option value="Printing">प्रिंटटिंग / Printing</option>
+                        <option value="WarehouseShipping">वेयरहाउस - शिपिंग / Warehouse-Shipping</option>                         
+                        <option value="SlideMaking">स्लाइड मेकिंग / Slide Making</option> 
+                </select></div></div>
+        <div class="row">
+            <div class="col-sm-4 col-xm-4">
+                <label for="Subjecct">विषय /Subject</label></div>
+            <div class="col-sm-5 col-xm-5" >
+                <select class="form-control" name="sbj">
+                        <option value="0">विषय चुनें / Select Subject</option>
+                        <option value="Working_Environment">वर्किंग एनवायरनमेंट/ Working Environment</option>
+                        <option value="Canteen">कैंटीन / Canteen</option>
+                        <option value="Ambulance">एम्ब्युलेन्स / Ambulance</option>
+                        <option value="Infrastructure">इनफ्रास्ट्रक्चर / Infrastructure</option> 
+                        <option value="Wages">वेजेस /Wages</option>
+                </select>
+            </div>
+        </div>       
+        <div class="row">
+            <div class="col-sm-4 col-xm-4">
+                <label for="employeeid">एम्प्लोयी आईडी /Employee Id</label></div>
+            <div class="col-sm-5 col-xm-5" >
+                <input class="form-control" type="text" id="empid" name="empid" placeholder="एम्प्लोयी आईडी दर्ज़ करें /EnterEmployee ID ">
+            </div>  
+        </div>
+        <div class="row"> 
+            <div class="col-sm-4 col-xm-4">
+                <label for="feeback"> शिकायत /Complaint </label> </div>
+           <div class="col-sm-5 col-xm-5" >
+            <textarea class="form-control" placeholder="शिकायत दर्ज़ करें /Enter Complaint" rows="1" name="fdb" id="fdb"></textarea>
+           </div>
+        </div>  
+        <div class="row"> 
+            </br> <div class="col-sm-4 col-xm-4">
+              <button type="submit" class="btn btn-primary">दर्ज़ करें /Submit</button>
+        </div> 
+                
+    </form>
+    <div class="row"> 
+        <div class="col-sm-2 col-xm-2"><p> </br></br></br></p>
+        </div>
+     
+</div>
+<div class="footer">
+    All &COPY; Reserved for Grievance Redressal  System ,ITC MGR
+</div> 
+<div id="id01" class="modal">
+    <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+         <div class="modal-header"><center>Login</center>
+        </div>
+        <div class="modal-body">
+            <form class="form-group" action="./login" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+                    
+                <label for="uname"><b>Username</b></label>
+              <select class="form-control" name="deptid">
+                                <option value="0">Select Your Login Id</option>
+                                <option value="Ashish"> Ashish</option>
+                                <option value="Ram Prakash"> Ram Prakash</option>
+                                <option value="Utsav Vatsayan"> Utsav Vatsayan</option>
+                                <option value="HR">HR </option> 
+                                </select> 
+                <label for="psw"><b>Password</b></label>
+              <input  class="form-control" type="password" placeholder="Please Enter Password" name="psw" required>
+              </br><center><button type="submit" class="btn btn-primary">Login</button></center>
+            
+          </form>
+        </div></div>
+     </div>
+</div>
+    
+<div id="id02" class="modal">
+    <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+         <div class="modal-header"><center>शिकायत की स्थिति / Complain Status</center>
+        </div>
+        <div class="modal-body">
+            
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div><form class="form-group" action="fdbgoal.jsp" method="post">
+               <div class="form-group">
+            <label for="complainId"> शिकायत की स्थिति / Complain Status</label>
+            <input type="text" class="form-control" id="cpid" name="cpid" placeholder="शिकायत आईडी दर्ज़ करें / Enter Complain ID ">
+          </div>
+                <center><button type="submit" class="btn btn-default">Search</button></center>
+        
+          </form>
+        </div></div>
+     </div>
+  </div>
+        </body>
+<script>
+var modal = document.getElementById('id01');
+var modala=document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal|modala) {
+        modal.style.display = "none";
+    }
+ }
+
+ </script>
+ 
+</html>
+
+
+            
+  
